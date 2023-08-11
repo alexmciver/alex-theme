@@ -1,19 +1,18 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const cssmin = require('gulp-cssmin');
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 
-gulp.task('styles', function () {
-    return gulp.src('src/scss/*.scss')
-        .pipe(sass())
-        .pipe(cssmin())
-        .pipe(gulp.dest('dist/css'));
-});
+function compileSass() {
+  return gulp
+    .src('assets/scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('assets/css'));
+}
 
-gulp.task('scripts', function () {
-    return gulp.src('src/js/*.js')
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest('dist/js'));
-});
+function watchFiles() {
+  gulp.watch('assets/scss/**/*.scss', compileSass);
+}
 
-gulp.task('default', gulp.parallel('styles', 'scripts'));
+exports.sass = compileSass;
+exports.default = watchFiles;
