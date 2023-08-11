@@ -2,7 +2,7 @@
 // Enqueue styles and scripts
 function your_theme_enqueue_scripts() {
     // Enqueue main stylesheet
-    wp_enqueue_style('your-theme-style', get_stylesheet_uri());
+    wp_enqueue_style('your-theme-style', get_template_directory_uri() . '/assets/css/style.css');
 
     // Enqueue custom JavaScript
     wp_enqueue_script('your-theme-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0', true);
