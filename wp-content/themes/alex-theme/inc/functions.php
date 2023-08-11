@@ -11,6 +11,9 @@ add_action('wp_enqueue_scripts', 'your_theme_enqueue_scripts');
 
 // Add support for featured images
 add_theme_support('post-thumbnails');
+// Enabling HTML5 support
+add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
+
 
 // Add custom menu support
 function your_theme_register_menus() {
@@ -20,5 +23,22 @@ function your_theme_register_menus() {
     ));
 }
 add_action('after_setup_theme', 'your_theme_register_menus');
+
+//Register ACF Blocks
+
+function my_acf_block_init() {
+    // Check if the function exists to avoid errors.
+    if (function_exists('acf_register_block')) {
+        acf_register_block(array(
+            'name' => 'hero-block',
+            'title' => __('This is my first Block'),
+            'description' => __('This is a custom block created using ACF.'),
+            'render_template' => 'template-parts/hero-block.php',
+        ));
+    }
+}
+add_action('acf/init', 'my_acf_block_init');
+
+
 
 ?>
