@@ -1,0 +1,14 @@
+{
+  "name": "alex-theme",
+  "version": "1.0.0",
+  "description": "A custom Gutenberg theme by Alex McIver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex McIver",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
