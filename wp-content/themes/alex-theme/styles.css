@@ -1,7 +1,14 @@
 /*
-Theme Name: Alex Theme
-Description: A custom Gutenberg theme
-Version: 1.0.0
-Author: Alex McIver
-Author URI: Your website or profile URL
+Theme Name: Your Theme Name
+Theme URI: http://www.example.com/
+Author: Your Name
+Author URI: http://www.yourwebsite.com/
+Description: A brief description of your theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: your-theme-text-domain
+Tags: custom, responsive, blog
 */
+
+/* Additional style rules go here */
