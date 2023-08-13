@@ -24,20 +24,23 @@ function your_theme_register_menus() {
 }
 add_action('after_setup_theme', 'your_theme_register_menus');
 
-//Register ACF Blocks
+// ACF Gutenberg blocks
+add_action('acf/init', 'my_acf_blocks_init');
+function my_acf_blocks_init() {
 
-function my_acf_block_init() {
-    // Check if the function exists to avoid errors.
-    if (function_exists('acf_register_block')) {
-        acf_register_block(array(
-            'name' => 'hero-block',
-            'title' => __('This is my first Block'),
-            'description' => __('This is a custom block created using ACF.'),
-            'render_template' => 'template-parts/hero-block.php',
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // Register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'hero-block',
+            'title'             => __('Testimonial'),
+            'description'       => __('A custom testimonial block.'),
+            'render_template'   => 'template-parts/hero-block.php',
+            'category'          => '',
         ));
     }
 }
-add_action('acf/init', 'my_acf_block_init');
 
 
 

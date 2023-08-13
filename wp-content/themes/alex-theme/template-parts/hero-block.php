@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <div class="hero-block">
     <div class="container">
         <div class="content">
