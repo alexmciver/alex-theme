@@ -13,13 +13,15 @@ add_action('wp_enqueue_scripts', 'your_theme_enqueue_scripts');
 add_theme_support('post-thumbnails');
 // Enabling HTML5 support
 add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
+// Theme title-tag support
+add_theme_support( "title-tag" );
 
 
 // Add custom menu support
 function your_theme_register_menus() {
     register_nav_menus(array(
-        'primary-menu' => __('Primary Menu', 'your-theme-text-domain'),
-        'secondary-menu' => __('Secondary Menu', 'your-theme-text-domain'),
+        'primary-menu' => __('Primary Menu', 'alex-theme'),
+        'secondary-menu' => __('Secondary Menu', 'alex-theme'),
     ));
 }
 add_action('after_setup_theme', 'your_theme_register_menus');

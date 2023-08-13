@@ -26,7 +26,7 @@
                 </div>
             </article>
         <?php endwhile; else : ?>
-            <p><?php esc_html_e('No posts found.', 'your-theme-text-domain'); ?></p>
+            <p><?php esc_html_e('No posts found.', 'alex-theme'); ?></p>
         <?php endif; ?>
     </main>
 
