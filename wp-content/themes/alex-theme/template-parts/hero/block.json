@@ -1,17 +1,17 @@
 {
-  "name": "acf-hero",
+  "name": "alex-theme/hero",
   "title": "Hero",
   "description": "A custom Hero block.",
-  "category": "Alex blocks",
+  "category": "alex-blocks", // Use a slug here
   "keywords": ["hero"],
   "acf": {
-      "mode": "preview",
-      "renderTemplate": "/template-parts/hero/hero.php",
-      "blockVersion": 2
+    "mode": "preview",
+    "renderTemplate": "alex-theme/template-parts/hero/hero.php",
+    "blockVersion": 2
   },
   "supports": {
-      "anchor": true,
-      "align": true,
-      "className": true
+    "anchor": true,
+    "align": true,
+    "className": true
   }
 }
