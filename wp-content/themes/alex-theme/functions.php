@@ -18,6 +18,8 @@ add_theme_support("title-tag");
 add_theme_support("wp-block-styles");
 // Add support for responsive embeds 
 add_theme_support("responsive-embeds");
+// Add support for HTML5 
+add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
 // Add custom menu support
 function your_theme_register_menus() {
