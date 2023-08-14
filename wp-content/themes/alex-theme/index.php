@@ -31,7 +31,7 @@
     </main>
     
     <footer>
-        <p>&copy; <?php echo date('Y'); ?> AAAAA Your Site Name. All rights reserved.</p>
+        <p>&copy; <?php echo date('Y'); ?> AAAAA Your Site Name. All rights reserved. aaa</p>
     </footer>
     
     <?php wp_footer(); ?>
