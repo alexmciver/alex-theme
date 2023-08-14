@@ -12,6 +12,12 @@ add_action('wp_enqueue_scripts', 'your_theme_enqueue_scripts');
 
 // Add support for featured images
 add_theme_support('post-thumbnails');
+// Add support for title tag 
+add_theme_support("title-tag");
+// Add theme support for WP Block styles
+add_theme_support("wp-block-styles");
+// Add support for responsive embeds 
+add_theme_support("responsive-embeds");
 
 // Add custom menu support
 function your_theme_register_menus() {
