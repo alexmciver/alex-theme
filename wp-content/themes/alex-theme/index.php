@@ -19,19 +19,19 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
-                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?>aaaaaaa</a></h2>
                 </header>
                 <div class="entry-content">
                     <?php the_content(); ?>
                 </div>
             </article>
         <?php endwhile; else : ?>
-            <p><?php esc_html_e('No posts found.', 'your-theme-text-domain'); ?></p>
+            <p><?php esc_html_e('No posts found.', 'alex-theme'); ?></p>
         <?php endif; ?>
     </main>
     
     <footer>
-        <p>&copy; <?php echo date('Y'); ?> Your Site Name. All rights reserved.</p>
+        <p>&copy; <?php echo date('Y'); ?> AAAAA Your Site Name. All rights reserved.</p>
     </footer>
     
     <?php wp_footer(); ?>

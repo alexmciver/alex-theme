@@ -22,4 +22,15 @@ function your_theme_register_menus() {
 add_action('after_setup_theme', 'your_theme_register_menus');
 
 
+
+//registering ACF blocks
+if (!function_exists('alex_register_acf_blocks')) {
+  function alex_register_acf_blocks()
+  {
+      register_block_type(get_template_directory_uri() . '/template-parts/hero-block');
+  }
+}
+add_action('init', __NAMESPACE__ . 'alex_register_acf_blocks', 10, 2);
+
+
 ?>

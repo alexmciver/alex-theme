@@ -1,0 +1,3 @@
+<?php
+/** TEMPLATE NAME: Hero */
+?>
