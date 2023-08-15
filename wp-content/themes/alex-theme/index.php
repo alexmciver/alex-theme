@@ -16,10 +16,10 @@
     </header>
     
     <main id="content" role="main">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php if(have_posts()):while(have_posts()) : the_post(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
-                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?>aaaaaaa</a></h2>
+                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?>aaaaaaaxx</a></h2>
                 </header>
                 <div class="entry-content">
                     <?php the_content(); ?>
@@ -30,9 +30,7 @@
         <?php endif; ?>
     </main>
     
-    <footer>
-        <p>&copy; <?php echo date('Y'); ?> AAAAA Your Site Name. All rights reserved. aaa</p>
-    </footer>
+   
     
     <?php wp_footer(); ?>
 </body>

@@ -1,5 +1,6 @@
+<?php
 /** TEMPLATE NAME: Footer */
-
+?>
 
 <div class="footer">
     <div class="container">
