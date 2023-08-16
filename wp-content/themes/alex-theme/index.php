@@ -7,17 +7,9 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header>
-        <nav>
-            <?php
-             wp_nav_menu(array(
-            'theme_location' => 'primary-menu', // Use the menu location you registered
-            'menu_class' => 'your-menu-class', // Add a custom CSS class to the menu
-            ));
-            ?>
-        </nav>
-    </header>
-    
+
+    <?php get_header(); ?>
+
     <main id="content" role="main">
         <?php
         while (have_posts()) : the_post();

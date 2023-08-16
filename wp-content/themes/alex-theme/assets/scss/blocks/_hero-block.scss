@@ -1,5 +1,12 @@
-.hero-block {
-    h1 {
-        color: red;
+.hero {
+    background: green;
+    margin-left: 0;
+  .hero-content {
+    background: red;
+    display: flex;
+    .content-left,
+    .content-right {
+      width: 50%;
     }
+  }
 }
