@@ -1,5 +1,17 @@
+html {
+  font-size: 10px;
+}
+body, 
+p {
+    font-size: 1.6rem; /* 16px equivalent */
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
 .container {
-  max-width: 1200px; 
+  max-width: 120rem; 
   margin: 0 auto;
   background: red;
   @include tablet {
