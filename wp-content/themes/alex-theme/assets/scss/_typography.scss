@@ -1,29 +1,29 @@
 /* Lato Black Font */
 @font-face {
-    font-family: 'Lato Black';
+    font-family: $lato-black;
     src: url('../fonts/Lato-Black.ttf') format('truetype');
 }
 
 /* Lato Black  Italic Font */
 @font-face {
-    font-family: 'Lato Black Italic';
+    font-family: $lato-black-italic;
     src: url('../fonts/Lato-BlackItalic.ttf') format('truetype');
 }
 
 /* Open Sans Regular Font */
 @font-face {
-    font-family: 'Open Sans Regular';
+    font-family: $open-sans-regular;
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 /* Open Sans Medium Font */
 @font-face {
-    font-family: 'Open Sans Medium';
+    font-family: $open-sans-medium;
     src: url('../fonts/OpenSans-Medium.ttf') format('truetype');
 }
 
 /* Open Sans Medium Italic Font */
 @font-face {
-    font-family: 'Open Sans Medium Italic';
+    font-family: $open-sans-medium-italic;
     src: url('../fonts/OpenSans-MediumItalic.ttf') format('truetype');
 }
