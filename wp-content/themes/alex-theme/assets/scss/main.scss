@@ -1,9 +1,8 @@
-@import '_variables.scss';
-@import '_mixins.scss';
-@import '_global.scss';
-@import '_typography.scss';
-@import '_typography.scss';
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'typography';
 
-@import 'blocks/_hero-block.scss';
+@import 'blocks/hero-block';
 
 
