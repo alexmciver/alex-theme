@@ -1,6 +1,10 @@
 .container {
   max-width: 1200px; 
   margin: 0 auto;
+  background: red;
+  @include tablet {
+        background: blue;
+    }
   @include mobile {
         background: green;
     }

@@ -1,1 +1,1 @@
-.container{max-width:1200px;margin:0 auto}@media (max-width:480px){.container{background:green}}
+.container{max-width:1200px;margin:0 auto;background:red}@media (max-width:800px){.container{background:#00f}}@media (max-width:767px){.container{background:green}}
