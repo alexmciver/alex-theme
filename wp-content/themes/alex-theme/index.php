@@ -10,28 +10,23 @@
     <header>
         <nav>
             <?php
-                // Output your navigation menu here using wp_nav_menu()
+             wp_nav_menu(array(
+            'theme_location' => 'primary-menu', // Use the menu location you registered
+            'menu_class' => 'your-menu-class', // Add a custom CSS class to the menu
+            ));
             ?>
         </nav>
     </header>
     
     <main id="content" role="main">
-        <?php if(have_posts()):while(have_posts()) : the_post(); ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
-                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?>aaaaaaaxx</a></h2>
-                </header>
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                </div>
-            </article>
-        <?php endwhile; else : ?>
-            <p><?php esc_html_e('No posts found.', 'alex-theme'); ?></p>
-        <?php endif; ?>
+        <?php
+        while (have_posts()) : the_post();
+            the_content();
+        endwhile;
+        ?>
     </main>
     
-   
+    <?php get_footer(); ?>
     
-    <?php wp_footer(); ?>
 </body>
 </html>
