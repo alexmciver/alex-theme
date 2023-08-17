@@ -34,10 +34,18 @@ add_action ('after_setup_theme', 'your_theme_register_menus');
 // Registering ACF blocks
 if (!function_exists('alex_register_acf_blocks')) {
   function alex_register_acf_blocks() {
+      // Hero block
       acf_register_block_type(array(
           'name' => 'custom/hero',
           'title' => __('Hero Block'),
           'render_template' => get_template_directory() . '/template-parts/hero/hero.php',
+      ));
+
+      // Text left block
+      acf_register_block_type(array(
+          'name' => 'custom/text-left',
+          'title' => __('Text left Block'),
+          'render_template' => get_template_directory() . '/template-parts/text-left/text-left.php',
       ));
   }
 }
