@@ -16,12 +16,5 @@ h1 {
 
 .container {
   max-width: 120rem; 
-  margin: 0 auto;
   background: red;
-  @include tablet {
-        background: blue;
-    }
-  @include mobile {
-        background: green;
-    }
 }
