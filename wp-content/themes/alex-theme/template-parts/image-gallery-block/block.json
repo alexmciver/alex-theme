@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/image-gallery-block",
+    "title": "Image Gallery Block",
+    "description": "A custom Image gallery block.",
+    "category": "alex-blocks",
+    "keywords": ["image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "alex-theme/template-parts/image-gallery-block/image-gallery-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

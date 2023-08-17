@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/faq-block",
+    "title": "FAQ Block",
+    "description": "A custom FAQ block.",
+    "category": "alex-blocks",
+    "keywords": ["faq"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "alex-theme/template-parts/faq-block/faq-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

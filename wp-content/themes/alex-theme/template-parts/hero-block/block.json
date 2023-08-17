@@ -1,12 +1,12 @@
 {
-    "name": "alex-theme/text-left",
+    "name": "alex-theme/hero-block",
     "title": "Hero",
-    "description": "A custom text left block.",
+    "description": "A custom Hero block.",
     "category": "alex-blocks",
-    "keywords": ["text"],
+    "keywords": ["hero"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/text-left/text-left.php",
+        "renderTemplate": "alex-theme/template-parts/hero-block/hero-block.php",
         "blockVersion": 2
     },
     "supports": {

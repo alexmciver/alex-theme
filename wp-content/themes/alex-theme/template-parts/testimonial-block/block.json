@@ -1,12 +1,12 @@
 {
-    "name": "alex-theme/hero",
+    "name": "alex-theme/testimonial-block",
     "title": "Hero",
-    "description": "A custom Hero block.",
+    "description": "A custom Testimonial block.",
     "category": "alex-blocks",
-    "keywords": ["hero"],
+    "keywords": ["testimonial"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/hero/hero.php",
+        "renderTemplate": "alex-theme/template-parts/testimonial-block/testimonial-block.php",
         "blockVersion": 2
     },
     "supports": {

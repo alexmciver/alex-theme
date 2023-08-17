@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/team-members-block",
+    "title": "Team Members Block",
+    "description": "A custom Team Members block.",
+    "category": "alex-blocks",
+    "keywords": ["team"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "alex-theme/template-parts/team-members-block/team-members-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}
