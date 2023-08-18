@@ -30,23 +30,28 @@ function your_theme_register_menus() {
 }
 add_action ('after_setup_theme', 'your_theme_register_menus');
 
-
 // Registering ACF blocks
 function alex_register_acf_blocks() {
-      register_block_type(get_template_directory() . '/template-parts/blog-posts-block');
-      register_block_type(get_template_directory() . '/template-parts/call-to-action-block');
-      register_block_type(get_template_directory() . '/template-parts/contact-block');
-      register_block_type(get_template_directory() . '/template-parts/countdown-block');
-      register_block_type(get_template_directory() . '/template-parts/faq-block');
-      register_block_type(get_template_directory() . '/template-parts/feature-block');
-      register_block_type(get_template_directory() . '/template-parts/hero-block');
-      register_block_type(get_template_directory() . '/template-parts/image-gallery-block');
-      register_block_type(get_template_directory() . '/template-parts/map-block');
-      register_block_type(get_template_directory() . '/template-parts/portfolio-block');
-      register_block_type(get_template_directory() . '/template-parts/services-block');
-      register_block_type(get_template_directory() . '/template-parts/social-media-block');
-      register_block_type(get_template_directory() . '/template-parts/team-members-block');
-      register_block_type(get_template_directory() . '/template-parts/testimonial-block');
+    $block_templates = array(
+        'blog-posts-block',
+        'call-to-action-block',
+        'contact-block',
+        'countdown-block',
+        'faq-block',
+        'feature-block',
+        'hero-block',
+        'image-gallery-block',
+        'map-block',
+        'portfolio-block',
+        'services-block',
+        'social-media-block',
+        'team-members-block',
+        'testimonial-block',
+    );
+
+    foreach ($block_templates as $template) {
+        register_block_type(get_template_directory() . '/template-parts/' . $template);
+    }
 }
 add_action('acf/init', 'alex_register_acf_blocks');
 
