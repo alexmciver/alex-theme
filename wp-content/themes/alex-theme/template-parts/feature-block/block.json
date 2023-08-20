@@ -6,7 +6,7 @@
     "keywords": ["feature"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/feature-block/feature-block.php",
+        "renderTemplate": "/template-parts/feature-block/feature-block.php",
         "blockVersion": 2
     },
     "supports": {

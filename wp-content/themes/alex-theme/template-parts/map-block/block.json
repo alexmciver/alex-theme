@@ -6,7 +6,7 @@
     "keywords": ["map"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/map-block/map-block.php",
+        "renderTemplate": "/template-parts/map-block/map-block.php",
         "blockVersion": 2
     },
     "supports": {

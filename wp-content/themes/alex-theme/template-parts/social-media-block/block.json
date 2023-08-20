@@ -6,7 +6,7 @@
     "keywords": ["social"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/social-media-block/social-media-block.php",
+        "renderTemplate": "/template-parts/social-media-block/social-media-block.php",
         "blockVersion": 2
     },
     "supports": {

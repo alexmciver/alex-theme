@@ -10,7 +10,7 @@ $hero_text = get_field('hero_text');
   <div class="container">
     <div class="hero-content">
       <div class="content-left">
-        <h1>WordPress and Shopify developer</h1>
+        <h1><?php echo $hero_text; ?></h1>
         <div class="buttons">
             <div class="button-left">
                 <button>Hire Me</button>

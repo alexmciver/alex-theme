@@ -6,7 +6,7 @@
     "keywords": ["team"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/team-members-block/team-members-block.php",
+        "renderTemplate": "/template-parts/team-members-block/team-members-block.php",
         "blockVersion": 2
     },
     "supports": {

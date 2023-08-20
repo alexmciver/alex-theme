@@ -6,7 +6,7 @@
     "keywords": ["testimonial"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/testimonial-block/testimonial-block.php",
+        "renderTemplate": "/template-parts/testimonial-block/testimonial-block.php",
         "blockVersion": 2
     },
     "supports": {

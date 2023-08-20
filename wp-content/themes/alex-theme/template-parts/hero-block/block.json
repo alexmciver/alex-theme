@@ -6,7 +6,7 @@
     "keywords": ["hero"],
     "acf": {
         "mode": "preview",
-        "renderTemplate": "alex-theme/template-parts/hero-block/hero-block.php",
+        "renderTemplate": "/template-parts/hero-block/hero-block.php",
         "blockVersion": 2
     },
     "supports": {
