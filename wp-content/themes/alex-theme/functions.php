@@ -56,6 +56,19 @@ function alex_register_acf_blocks() {
 add_action('acf/init', 'alex_register_acf_blocks');
 
 
+// Custom block category
+add_filter( 'block_categories_all', 'alex_blocks' );
+
+function alex_blocks( $block_categories ) {
+
+	$block_categories[] = array(
+		'slug' => 'alex-blocks',
+		'title' => 'Blocks by Alex'
+	);
+
+	return $block_categories;
+	
+}
 
 
 ?>
