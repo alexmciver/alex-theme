@@ -5,9 +5,9 @@
 html {
   font-size: 10px;
 }
-body, 
+body,
 p {
-    font-size: 1.6rem; /* 16px equivalent */
+  font-size: 1.6rem; /* 16px equivalent */
 }
 
 h1 {
@@ -34,9 +34,8 @@ h6 {
   font-size: clamp(16px, 2.5vw, 18px);
 }
 
-
 .container {
-  max-width: 120rem; 
+  max-width: 120rem;
   height: 100%;
 }
 .footer {
