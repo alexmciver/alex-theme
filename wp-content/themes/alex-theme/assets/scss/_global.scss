@@ -11,10 +11,34 @@ p {
 }
 
 h1 {
-    font-size: 3.2rem;
+  font-size: clamp(36px, 6vw, 48px);
 }
+
+h2 {
+  font-size: clamp(30px, 5vw, 36px);
+}
+
+h3 {
+  font-size: clamp(24px, 4vw, 30px);
+}
+
+h4 {
+  font-size: clamp(20px, 3.5vw, 24px);
+}
+
+h5 {
+  font-size: clamp(18px, 3vw, 20px);
+}
+
+h6 {
+  font-size: clamp(16px, 2.5vw, 18px);
+}
+
 
 .container {
   max-width: 120rem; 
-  background: red;
+  height: 100%;
+}
+.footer {
+  display: none;
 }

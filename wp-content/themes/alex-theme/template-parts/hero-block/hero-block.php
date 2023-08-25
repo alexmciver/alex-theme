@@ -1,29 +1,22 @@
-<?php  
+<?php
 
-/** TEMPLATE NAME: Hero Block */
-
-$hero_text = get_field('hero_text');
+$hero_title = get_field('hero_title');
+$hero_description = get_field('hero_description');
 
 ?>
 
 <div class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <div class="content-left">
-        <h1><?php echo $hero_text; ?></h1>
-        <div class="buttons">
-            <div class="button-left">
-                <button>Hire Me</button>
-            </div>
-            <div class="button-right">
-                <button>Hire Me</button>
-            </div>
-        </div>
-      </div>
-      <div class="content-right">
-        <h1>right</h1>
-      </div>
-    </div>
+ <div class="container">
+  <div class="hero-content">
+   <h1><?php echo esc_html($hero_title); ?></h1>
+   <p><?php echo esc_html($hero_description); ?></p>
+   <div class="button-container">
+    <?php if (have_rows('hero_buttons')) : ?>
+    <?php while (have_rows('hero_buttons')) : the_row(); ?>
+    <a href="<?php echo esc_url($button_url); ?>" class="button"><?php echo esc_html($button_text); ?></a>
+    <?php endwhile; ?>
+    <?php endif; ?>
+   </div>
   </div>
+ </div>
 </div>
-
