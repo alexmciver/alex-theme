@@ -1,13 +1,37 @@
 .site-header {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Add your header background color */
-  z-index: 2; /* Ensure the header is above other content */
+  z-index: 2;
+
+  .site-navigation {
+    display: flex;
+    justify-content: flex-end;
+
+    .menu-header-container {
+      width: 100%;
+      max-width: 54rem;
+      padding: 2.2rem;
+      display: flex;
+      justify-content: space-evenly;
+
+      #menu-header {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 90rem;
+
+        li {
+          list-style: none;
+
+          a {
+            color: red;
+            text-decoration: none;
+            font-family: $lato-black;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
 }
