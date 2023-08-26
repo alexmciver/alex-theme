@@ -10,10 +10,9 @@
 
     .menu-header-container {
       width: 100%;
-      max-width: 54rem;
       padding: 2.2rem;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-end;
 
       #menu-header {
         display: flex;
