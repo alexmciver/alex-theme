@@ -56,7 +56,6 @@ add_action('acf/init', 'alex_register_acf_blocks');
 
 // Custom block category show correctly
 add_filter( 'block_categories_all', 'alex_block_category' );
-
 function alex_block_category( $categories ) {
     $new_category = array(
         'alex-blocks' => array(
@@ -64,12 +63,8 @@ function alex_block_category( $categories ) {
             'title' => 'Blocks by Alex'
         )
     );
-
-    $position = 1; // Place the custom category at the top
-
-    // Splice the new category into the categories array at the desired position
+    $position = 1; 
     array_splice( $categories, $position, 0, $new_category );
-
     return $categories;
 }
 
