@@ -3,12 +3,21 @@
   .container {
     margin: 0 auto;
   }
+  h1 {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
   .cta-content {
     text-align: center;
     color: white;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0.5rem;
+    height: 100%;
+    max-height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   h2 {
     margin-bottom: 1rem;
@@ -19,12 +28,10 @@
   .cta-button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #ff5722;
-    color: white;
     text-decoration: none;
     border-radius: 0.5rem;
-  }
-  &:hover {
-    background-color: #f44336;
+    &:hover {
+      background-color: #f44336;
+    }
   }
 }
