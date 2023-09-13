@@ -68,6 +68,13 @@ function alex_block_category( $categories ) {
     return $categories;
 }
 
+//GZIP Compression 
+function enable_gzip_compression() {
+    if (!ob_start("ob_gzhandler")) ob_start();
+}
+add_action('init', 'enable_gzip_compression');
+
+
 
 
 
