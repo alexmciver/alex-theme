@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
-const uglify = require("gulp-uglify");
+const minify = require("gulp-minify");
 
 // Compile Sass to CSS
 gulp.task("compile-sass", function () {
@@ -18,8 +18,8 @@ gulp.task("compile-sass", function () {
 gulp.task("scripts", function () {
   return gulp
     .src("assets/js/*.js")
-    .pipe(concat("main.js"))
-    .pipe(uglify())
+    .pipe(concat("main.js")) // Concatenate into main.js
+    .pipe(minify()) // Minify
     .pipe(gulp.dest("assets/js"));
 });
 
