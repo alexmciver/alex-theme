@@ -3,6 +3,7 @@ const sass = require("gulp-sass")(require("sass"));
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
 const minify = require("gulp-minify");
+const fs = require("fs");
 
 // Compile Sass to CSS
 gulp.task("compile-sass", function () {
@@ -17,10 +18,19 @@ gulp.task("compile-sass", function () {
 // Concatenate and minify JavaScript
 gulp.task("scripts", function () {
   return gulp
-    .src("assets/js/*.js")
-    .pipe(concat("main.js")) // Concatenate into main.js
-    .pipe(minify()) // Minify
-    .pipe(gulp.dest("assets/js"));
+    .src("assets/js/*.js") // Assumes all JS files are in assets/js directory
+    .pipe(concat("main.js"))
+    .pipe(minify())
+    .pipe(gulp.dest("assets/js"))
+    .on("end", function () {
+      // Delete the existing main-min.js file and rename main.js to main-min.js
+      fs.unlink("assets/js/main-min.js", function (err) {
+        if (err) throw err;
+        fs.rename("assets/js/main.js", "assets/js/main-min.js", function (err) {
+          if (err) throw err;
+        });
+      });
+    });
 });
 
 // Watch for changes and run tasks

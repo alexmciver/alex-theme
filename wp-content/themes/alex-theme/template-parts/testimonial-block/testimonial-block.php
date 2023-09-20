@@ -32,7 +32,7 @@
 </div>
 
 
-
+<!-- 
 <script>
 jQuery(document).ready(function($) {
  $('.testimonial-flexbox').slick({
@@ -46,4 +46,4 @@ jQuery(document).ready(function($) {
   cssEase: 'linear'
  });
 });
-</script>
+</script> -->
