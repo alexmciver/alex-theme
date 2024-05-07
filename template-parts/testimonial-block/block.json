@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/testimonial-block",
+    "title": "Testimonial Block",
+    "description": "A custom Testimonial block.",
+    "category": "alex-blocks",
+    "keywords": ["testimonial"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/testimonial-block/testimonial-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

@@ -1,0 +1,50 @@
+.hero {
+  padding: 22rem 0;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    max-width: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 20rem;
+  }
+
+  &-content {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 4.8rem;
+      font-family: $lato-black;
+      line-height: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2.2rem;
+      font-family: $open-sans-regular;
+      margin-bottom: 2rem;
+    }
+
+    .button-container {
+      display: flex;
+      margin: 0 auto;
+      max-width: 30rem;
+      justify-content: space-between;
+
+      .button {
+        text-decoration: none;
+        font-size: 1.7rem;
+        padding: 0.8rem;
+        border-radius: 1.2rem;
+        font-size: 1.9rem;
+        font-family: $open-sans-regular;
+      }
+    }
+  }
+}

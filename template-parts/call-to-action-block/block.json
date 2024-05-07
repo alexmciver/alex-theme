@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/call-to-action-block",
+    "title": "Call to Action Block",
+    "description": "A custom Call to Action block.",
+    "category": "alex-blocks",
+    "keywords": ["cta"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/call-to-action-block/call-to-action-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

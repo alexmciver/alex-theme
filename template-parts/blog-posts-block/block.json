@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/blog-posts-block",
+    "title": "Blog Posts block",
+    "description": "A custom Blog Posts block.",
+    "category": "alex-blocks",
+    "keywords": ["blog"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/blog-posts-block/blog-posts-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

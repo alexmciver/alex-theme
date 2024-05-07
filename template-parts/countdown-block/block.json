@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/countdown-block",
+    "title": "Countdown Block",
+    "description": "A custom Countdown block.",
+    "category": "alex-blocks",
+    "keywords": ["countdown"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/countdown-block/countdown-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

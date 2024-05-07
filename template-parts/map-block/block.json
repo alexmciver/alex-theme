@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/map-block",
+    "title": "Map Block",
+    "description": "A custom Map block.",
+    "category": "alex-blocks",
+    "keywords": ["map"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/map-block/map-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

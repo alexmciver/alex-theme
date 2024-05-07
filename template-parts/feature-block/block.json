@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/feature-block",
+    "title": "Feature Block",
+    "description": "A custom Feature block.",
+    "category": "alex-blocks",
+    "keywords": ["feature"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/feature-block/feature-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

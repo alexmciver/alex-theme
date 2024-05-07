@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/social-media-block",
+    "title": "Social Media Block",
+    "description": "A custom Social media block.",
+    "category": "alex-blocks",
+    "keywords": ["social"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/social-media-block/social-media-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}

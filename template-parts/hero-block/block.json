@@ -1,0 +1,17 @@
+{
+    "name": "alex-theme/hero-block",
+    "title": "Hero",
+    "description": "A custom Hero block.",
+    "category": "alex-blocks",
+    "keywords": ["hero"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "/template-parts/hero-block/hero-block.php",
+        "blockVersion": 2
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "className": true
+    }
+}
