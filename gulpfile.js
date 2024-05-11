@@ -2,8 +2,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const cssmin = require("gulp-cssmin");
 const concat = require("gulp-concat");
-const minify = require("gulp-minify");
-const fs = require("fs");
+const uglify = require("gulp-uglify");
 
 // Compile Sass to CSS
 gulp.task("compile-sass", function () {
@@ -16,21 +15,11 @@ gulp.task("compile-sass", function () {
 });
 
 // Concatenate and minify JavaScript
-gulp.task("scripts", function () {
-  return gulp
-    .src("assets/js/*.js") // Assumes all JS files are in assets/js directory
-    .pipe(concat("main.js"))
-    .pipe(minify())
-    .pipe(gulp.dest("assets/js"))
-    .on("end", function () {
-      // Delete the existing main-min.js file and rename main.js to main-min.js
-      fs.unlink("assets/js/main-min.js", function (err) {
-        if (err) throw err;
-        fs.rename("assets/js/main.js", "assets/js/main-min.js", function (err) {
-          if (err) throw err;
-        });
-      });
-    });
+gulp.task('scripts', function () {
+  return gulp.src('assets/js/*.js')
+    .pipe(concat('main.js')) // Concatenate all JS files into one file named bundle.js
+    .pipe(uglify()) // Minify the concatenated JavaScript
+    .pipe(gulp.dest('assets/js')); // Output the minified JavaScript to the public/js directory
 });
 
 // Watch for changes and run tasks
