@@ -17,9 +17,9 @@ gulp.task("compile-sass", function () {
 // Concatenate and minify JavaScript
 gulp.task('scripts', function () {
   return gulp.src('assets/js/*.js')
-    .pipe(concat('main.js')) // Concatenate all JS files into one file named bundle.js
-    .pipe(uglify()) // Minify the concatenated JavaScript
-    .pipe(gulp.dest('assets/js')); // Output the minified JavaScript to the public/js directory
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('assets/js'));
 });
 
 // Watch for changes and run tasks
