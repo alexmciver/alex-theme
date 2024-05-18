@@ -1,15 +1,15 @@
-=== Your Theme Name ===
+=== YAlex Theme ===
 Contributors: Alex McIver
 Tags: responsive, customizable, modern
 Requires at least: WordPress 5.2
-Tested up to: WordPress 6.3
+Tested up to: WordPress 6.5.2
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: alex-theme
 
 == Description ==
-Your Theme Name is a beautifully designed and fully responsive WordPress theme that's perfect for any website.
+Alex Theme is a beautifully designed and fully responsive WordPress theme that's perfect for any website.
 
 == Features ==
 - Fully responsive design
