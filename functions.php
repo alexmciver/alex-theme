@@ -2,11 +2,9 @@
 
 // Enqueue styles and scripts
 function your_theme_enqueue_scripts() {
-    // Enqueue main stylesheet
-    wp_enqueue_style( 'your-theme-style', esc_url( get_template_directory_uri() . '/assets/css/styles.css' ) );
+    wp_enqueue_style('alex-theme-style', get_stylesheet_uri(), array(), filemtime(get_stylesheet_directory() . '/style.css'));
 
-    // Enqueue custom JavaScript
-    wp_enqueue_script('your-theme-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('alex-theme-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), filemtime(get_stylesheet_directory() . '/assets/js/main.js'), true);
 }
 add_action('wp_enqueue_scripts', 'your_theme_enqueue_scripts');
 
@@ -20,13 +18,13 @@ add_theme_support("responsive-embeds");
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
 // Add custom menu support
-function your_theme_register_menus() {
+function alex_theme_setup() {
     register_nav_menus(array(
         'primary-menu' => __('Primary Menu', 'alex-theme'),
         'secondary-menu' => __('Secondary Menu', 'alex-theme'),
     ));
 }
-add_action ('after_setup_theme', 'your_theme_register_menus');
+add_action('after_setup_theme', 'alex_theme_setup');
 
 // Registering ACF blocks
 function alex_register_acf_blocks() {
@@ -57,15 +55,15 @@ add_action('acf/init', 'alex_register_acf_blocks');
 // Custom block category show correctly
 add_filter( 'block_categories_all', 'alex_block_category' );
 function alex_block_category( $categories ) {
-    $new_category = array(
-        'alex-blocks' => array(
-            'slug'  => 'alex-blocks',
-            'title' => 'Blocks by Alex'
-        )
+    return array_merge(
+        array(
+            array(
+                'slug' => 'alex-blocks',
+                'title' => __('Blocks by Alex', 'alex-theme'),
+            ),
+        ),
+        $categories
     );
-    $position = 1; 
-    array_splice( $categories, $position, 0, $new_category );
-    return $categories;
 }
 
 //GZIP Compression 
