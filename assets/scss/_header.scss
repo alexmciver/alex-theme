@@ -6,4 +6,8 @@
   .container {
    @extend .container;
   }
+  .site-navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
