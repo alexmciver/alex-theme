@@ -28,20 +28,7 @@ add_action('after_setup_theme', 'alex_theme_setup');
 // Registering ACF blocks
 function alex_register_acf_blocks() {
     $block_templates = array(
-        'blog-posts-block',
-        'call-to-action-block',
-        'contact-block',
-        'countdown-block',
-        'faq-block',
-        'feature-block',
-        'hero-block',
-        'image-gallery-block',
-        'map-block',
-        'portfolio-block',
-        'services-block',
-        'social-media-block',
-        'team-members-block',
-        'testimonial-block',
+        'hero',
     );
 
     foreach ($block_templates as $template) {

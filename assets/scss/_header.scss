@@ -6,8 +6,21 @@
   .container {
    @extend .container;
   }
-  .site-navigation {
+  .menu-header-container {
     display: flex;
     justify-content: flex-end;
+  }
+  .site-navigation__menu {
+    display: flex;
+      width: 60rem;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
   }
 }
