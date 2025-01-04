@@ -1,12 +1,11 @@
 <?php
 
 // Enqueue styles and scripts
-function your_theme_enqueue_scripts() {
-    wp_enqueue_style('alex-theme-style', get_stylesheet_uri(), array(), filemtime(get_stylesheet_directory() . '/style.css'));
-
-    wp_enqueue_script('alex-theme-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), filemtime(get_stylesheet_directory() . '/assets/js/main.js'), true);
+function my_theme_enqueue_assets() {
+    wp_enqueue_style('theme-style', get_template_directory_uri() . '/assets/css/styles.css');
+    wp_enqueue_script('theme-script', get_template_directory_uri() . '/assets/js/main.js', array(), null, true);
 }
-add_action('wp_enqueue_scripts', 'your_theme_enqueue_scripts');
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
 
 // Add support for featured images
 add_theme_support('post-thumbnails');
