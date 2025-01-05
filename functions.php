@@ -29,6 +29,10 @@ add_action('after_setup_theme', 'alex_theme_setup');
 function alex_register_acf_blocks() {
     $block_templates = array(
         'hero',
+        'about',
+        'my-work',
+        'hire-me',
+        'contact'
     );
 
     foreach ($block_templates as $template) {
@@ -57,9 +61,5 @@ function enable_gzip_compression() {
     if (!ob_start("ob_gzhandler")) ob_start();
 }
 add_action('init', 'enable_gzip_compression');
-
-
-
-
 
 ?>
